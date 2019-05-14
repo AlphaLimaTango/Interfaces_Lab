@@ -28,4 +28,21 @@ public class StereoTest {
     public void canGetCDPlayer() {
         assertEquals(cdPlayer, stereo.getCdPlayer());
     }
+
+    @Test
+    public void canGetVolume() {
+        assertEquals(1.0, stereo.getVolume(), 0.01);
+    }
+    @Test
+    public void canRaiseVolume() {
+        stereo.raiseVolume(0.5);
+        assertEquals(1.5, stereo.getVolume(), 0.01);
+    }
+
+    @Test
+    public void canLowerVolume(){
+        stereo.lowerVolume(0.2);
+        assertEquals(0.8 ,stereo.getVolume(), 0.01);
+
+    }
 }
