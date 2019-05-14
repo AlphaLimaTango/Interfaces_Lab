@@ -9,4 +9,7 @@ public class Radio extends Component {
     }
 
 
+    public String tune() {
+        return "I am tuned";
+    }
 }

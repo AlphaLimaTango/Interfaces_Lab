@@ -23,4 +23,9 @@ public class RadioTest {
     public void canGetModel() {
         assertEquals(Component.Model.TDD, radio.getModel());
     }
+
+    @Test
+    public void canTune(){
+        assertEquals("I am tuned", radio.tune());
+    }
 }

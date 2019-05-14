@@ -24,4 +24,9 @@ public class CDPlayerTest {
         assertEquals(Component.Model.VCS, cdPlayer.getModel());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Play song", cdPlayer.play());
+    }
+
 }
