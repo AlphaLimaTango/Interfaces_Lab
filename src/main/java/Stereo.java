@@ -1,5 +1,6 @@
 import components.CDPlayer;
 import components.Radio;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class Stereo {
 
@@ -32,4 +33,9 @@ public class Stereo {
     public void lowerVolume(double number) {
         this.volume -= number;
     }
+
+    public void playCD(){
+        cdPlayer.play();
+    }
+
 }

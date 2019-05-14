@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class CDPlayerTest {
 
@@ -25,8 +26,9 @@ public class CDPlayerTest {
     }
 
     @Test
-    public void canPlay(){
-        assertEquals("Play song", cdPlayer.play());
+    public void canPlay() {
+        cdPlayer.play();
+        assertTrue(cdPlayer.isPlaying());
     }
 
 }

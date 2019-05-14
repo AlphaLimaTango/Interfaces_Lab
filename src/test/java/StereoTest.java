@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class StereoTest {
 
@@ -45,4 +46,11 @@ public class StereoTest {
         assertEquals(0.8 ,stereo.getVolume(), 0.01);
 
     }
+
+    @Test
+    public void canPlayCD(){
+        stereo.playCD();
+        assertTrue(stereo.getCdPlayer().isPlaying());
+    }
+
 }
